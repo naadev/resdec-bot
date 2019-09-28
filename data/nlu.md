@@ -1,50 +1,819 @@
-## intent:greet
-- hey
-- hello
-- hi
-- good morning
-- good evening
-- hey there
+## intent:affirm
+- correct
+- ye
+- uh yes
+- let's do it
+- yeah
+- uh yes
+- um yes
+- yes knocking
+- that's correct
+- yes yes
+- right
+- yea
+- yes
+- yes right
+- yes and i dont care
+- right on
+- i love that
+- yes
+
+## intent:deny
+- no
+- no new selection
+- no thanks
+- no thank you
+- uh no
+- breath no
+- do you have something else
+- no this does not work for me
 
 ## intent:goodbye
 - bye
 - goodbye
 - see you around
 - see you later
+- bye
 
-## intent:affirm
-- yes
-- indeed
-- of course
-- that sounds good
-- correct
+## intent:greet
+- Hi
+- Hey
+- Hi bot
+- Hey bot
+- Hello
+- Good morning
+- hi again
+- hi folks
+- hi Mister
+- hi pal!
+- hi there
+- greetings
+- hello everybody
+- hello is anybody there
+- hello robot
+- hallo
+- heeey
+- hi hi
+- hey
+- hey hey
+- hello there
+- hi
+- hello
+- yo
+- hola
+- hi?
+- hey bot!
+- hello friend
+- hello
 
-## intent:deny
-- no
-- never
-- I don't think so
-- don't like that
-- no way
-- not really
+## intent:help
+- I need some help
+- What can you do?
+- What can of things can you do?
+- I don't know how work with you
+- Recommend me something, please
+- What do you do?
+- What kind of recommendations can you make?
+- Show me what you do
+- Recommend me something
+- How can I get started?
+- I want a recommendation
+- help
 
-## intent:mood_great
-- perfect
-- very good
-- great
-- amazing
-- wonderful
-- I am feeling very good
-- I am great
-- I'm good
+## intent:number_of_recommendations
+- Can you recommend me [10](number_of_components) components?
+- List [4](number_of_components) components, please
+- I would need at least [2](number_of_components)
+- can you display [4](number_of_components)
 
-## intent:mood_unhappy
-- sad
-- very sad
-- unhappy
-- bad
-- very bad
-- awful
-- terrible
-- not very good
-- extremely sad
-- so sad
+## intent:recommendation_request
+- [Cold Start](recommendation_type)
+- [Feature Based](recommendation_type)
+- [Rating Based](recommendation_type)
+- I want a [Cold Start](recommendation_type) recommendation
+- I want a [Feature](recommendation_type:Feature Based) recommendation
+- I want a [Rating](recommendation_type:Rating Based) recommendation
+- I think I will start with a [Cold Start](recommendation_type)
+- Recommend me [2](number_of_components) components for a [map][tag] functionality
+- Let's go for a [Cold Start](recommendation_type)
+- Let's go for a [Feature Based](recommendation_type)
+- Let's go for a [Rating Based](recommendation_type)
+- show me a [Cold Start](recommendation_type)
+- show me a [Feature Based](recommendation_type)
+- [Cold](recommendation_type:Cold Start)
+- [Feature](recommendation_type:Feature Based)
+- [Rating](recommendation_type:Rating Based)
+- [cold start](recommendation_type:Cold Start)
+- [feature based](recommendation_type:Feature Based)
+- [rating based](recommendation_type:Rating Based)
+- [Cold Start](recommendation_type)
+
+## intent:tags
+- I need a component which offers [email](tag) functionality
+- I would need to deploy a [chat](tag) component
+- [contact](tag)
+- [contact form](tag)
+- [email](tag)
+- [feedback](tag)
+- [form](tag)
+- [Content analysis](tag)
+- [google search console](tag)
+- [Readability](tag)
+- [seo](tag)
+- [xml sitemap](tag)
+- [akismet](tag)
+- [anti-spam](tag)
+- [antispam](tag)
+- [comments](tag)
+- [spam](tag)
+- [backup](tag)
+- [jetpack](tag)
+- [related posts](tag)
+- [security](tag)
+- [WordPress.com](tag)
+- [importer](tag)
+- [e-commerce](tag)
+- [ecommerce](tag)
+- [sales](tag)
+- [sell](tag)
+- [store](tag)
+- [all in one seo](tag)
+- [google](tag)
+- [page](tag)
+- [twitter](tag)
+- [bing](tag)
+- [msn](tag)
+- [yahoo](tag)
+- [authentication](tag)
+- [login](tag)
+- [editor](tag)
+- [formatting](tag)
+- [tinyMCE](tag)
+- [Write](tag)
+- [wysiwyg](tag)
+- [firewall](tag)
+- [limit login attempts](tag)
+- [login security](tag)
+- [malware scanner](tag)
+- [clone](tag)
+- [copy](tag)
+- [duplicate post](tag)
+- [cache](tag)
+- [caching](tag)
+- [performance](tag)
+- [WP Cache](tag)
+- [WP Super Cache](tag)
+- [analytics](tag)
+- [Analytics dashboard](tag)
+- [google analytics](tag)
+- [google analytics dashboard](tag)
+- [google analytics widget](tag)
+- [post thumbnail](tag)
+- [post thumbnails](tag)
+- [thumbnail](tag)
+- [thumbnails](tag)
+- [cloud backup](tag)
+- [database backup](tag)
+- [restore](tag)
+- [wordpress backup](tag)
+- [acf](tag)
+- [advanced](tag)
+- [custom](tag)
+- [field](tag)
+- [fields](tag)
+- [builder](tag)
+- [page builder](tag)
+- [responsive](tag)
+- [widget](tag)
+- [widgets](tag)
+- [google analytics plugin](tag)
+- [compression](tag)
+- [maxcdn](tag)
+- [migrate](tag)
+- [migration](tag)
+- [move](tag)
+- [bundle](tag)
+- [button](tag)
+- [image](tag)
+- [slider](tag)
+- [mailchimp](tag)
+- [marketing](tag)
+- [mc4wp](tag)
+- [newsletter](tag)
+- [captcha](tag)
+- [gallery](tag)
+- [nextgen](tag)
+- [NextGEN Gallery](tag)
+- [photo gallery](tag)
+- [wordpress gallery plugin](tag)
+- [custom form](tag)
+- [form builder](tag)
+- [forms](tag)
+- [disable](tag)
+- [global](tag)
+- [compress](tag)
+- [optimise](tag)
+- [Optimize](tag)
+- [resize](tag)
+- [i18n](tag)
+- [Japanese](tag)
+- [multibyte](tag)
+- [wp-multibyte-patch](tag)
+- [transfer](tag)
+- [navigation](tag)
+- [pages](tag)
+- [pagination](tag)
+- [paging](tag)
+- [html](tag)
+- [visual](tag)
+- [301](tag)
+- [404](tag)
+- [htaccess](tag)
+- [redirect](tag)
+- [hack](tag)
+- [malware](tag)
+- [secure](tag)
+- [security plugin](tag)
+- [slideshow](tag)
+- [wordpress slideshow](tag)
+- [contact form plugin](tag)
+- [gmail smtp](tag)
+- [sendgrid smtp](tag)
+- [smtp](tag)
+- [wordpress smtp](tag)
+- [WP Mail SMTP](tag)
+- [breadcrumb](tag)
+- [breadcrumbs](tag)
+- [menu](tag)
+- [trail](tag)
+- [columns](tag)
+- [shortcode](tag)
+- [toggle](tag)
+- [database](tag)
+- [revisions](tag)
+- [dashboard](tag)
+- [force ssl](tag)
+- [https](tag)
+- [insecure content](tag)
+- [mixed content](tag)
+- [ssl](tag)
+- [csv](tag)
+- [data](tag)
+- [excel](tag)
+- [table](tag)
+- [anti-virus](tag)
+- [antivirus](tag)
+- [ban](tag)
+- [amazon](tag)
+- [amazon s3](tag)
+- [back up](tag)
+- [chinese](tag)
+- [access](tag)
+- [admin](tag)
+- [Loginizer](tag)
+- [logs](tag)
+- [lossless](tag)
+- [optimization](tag)
+- [aweber](tag)
+- [lightbox popup](tag)
+- [popup](tag)
+- [wordpress popup](tag)
+- [calendar](tag)
+- [Event](tag)
+- [events](tag)
+- [organizer](tag)
+- [venue](tag)
+- [force](tag)
+- [regenerate thumbnails](tag)
+- [coming soon](tag)
+- [coming soon page](tag)
+- [launch page](tag)
+- [maintenance mode](tag)
+- [under construction](tag)
+- [Manage Multiple Sites](tag)
+- [admin interface](tag)
+- [options](tag)
+- [plugin options](tag)
+- [theme options](tag)
+- [maintenance](tag)
+- [website maintenance](tag)
+- [blogroll](tag)
+- [broken](tag)
+- [custom fields](tag)
+- [links](tag)
+- [l10n](tag)
+- [localisation](tag)
+- [localization](tag)
+- [translation](tag)
+- [translators](tag)
+- [Instagram](tag)
+- [instagram feed](tag)
+- [instagram gallery](tag)
+- [instagram photos](tag)
+- [Instagram widget](tag)
+- [products](tag)
+- [Wishlist](tag)
+- [woocommerce](tag)
+- [yit](tag)
+- [super cache](tag)
+- [total cache](tag)
+- [cms](tag)
+- [cpt](tag)
+- [custom post types](tag)
+- [post](tag)
+- [types](tag)
+- [async](tag)
+- [minify](tag)
+- [pagespeed](tag)
+- [ad](tag)
+- [banner](tag)
+- [simple](tag)
+- [AddToAny](tag)
+- [share](tag)
+- [share buttons](tag)
+- [sharing](tag)
+- [social](tag)
+- [cookie](tag)
+- [cookies](tag)
+- [notice](tag)
+- [notification](tag)
+- [notify](tag)
+- [social icons](tag)
+- [social media](tag)
+- [role](tag)
+- [user](tag)
+- [post order](tag)
+- [post sort](tag)
+- [posts order](tag)
+- [posts sort](tag)
+- [sort](tag)
+- [drag-and-drop](tag)
+- [elementor](tag)
+- [landing page](tag)
+- [statistics](tag)
+- [stats](tag)
+- [Visit](tag)
+- [WordPress analytics](tag)
+- [splash page](tag)
+- [beaver builder](tag)
+- [Drag And Drop editor](tag)
+- [front-end builder](tag)
+- [google map](tag)
+- [Google Maps](tag)
+- [map](tag)
+- [map markers](tag)
+- [maps](tag)
+- [duplicate custom posts](tag)
+- [duplicate page](tag)
+- [Page Duplicate](tag)
+- [Post duplicate](tag)
+- [administration](tag)
+- [api](tag)
+- [code](tag)
+- [content](tag)
+- [css](tag)
+- [Facebook Pixel](tag)
+- [footer](tag)
+- [commerce](tag)
+- [woothemes](tag)
+- [wordpress ecommerce](tag)
+- [image gallery](tag)
+- [responsive gallery](tag)
+- [scan](tag)
+- [Autoresponder](tag)
+- [post notification](tag)
+- [welcome email](tag)
+- [Google Fonts WordPress](tag)
+- [Google Webfonts](tag)
+- [typography](tag)
+- [webfonts](tag)
+- [WordPress Google Fonts Plugin](tag)
+- [discussion](tag)
+- [forums](tag)
+- [support](tag)
+- [theme](tag)
+- [cron](tag)
+- [mysql](tag)
+- [custom css](tag)
+- [styles](tag)
+- [exporter](tag)
+- [import](tag)
+- [bilingual](tag)
+- [language](tag)
+- [multilingual](tag)
+- [translate](tag)
+- [search and replace](tag)
+- [search replace](tag)
+- [search replace database](tag)
+- [update urls](tag)
+- [admin order](tag)
+- [categories sort](tag)
+- [category order](tag)
+- [taxonomy order](tag)
+- [terms order](tag)
+- [conditional-tags](tag)
+- [context](tag)
+- [filter](tag)
+- [clone wordpress](tag)
+- [copy wordpress](tag)
+- [move wordpress](tag)
+- [wp academy](tag)
+- [wpacademy](tag)
+- [fancybox](tag)
+- [lightbox](tag)
+- [photo](tag)
+- [popular](tag)
+- [popularity](tag)
+- [posts](tag)
+- [top](tag)
+- [credit card](tag)
+- [stripe](tag)
+- [sidebars](tag)
+- [widget areas](tag)
+- [manage](tag)
+- [management](tag)
+- [manager](tag)
+- [WordPress controller](tag)
+- [WordPress Management](tag)
+- [custom field](tag)
+- [meta](tag)
+- [meta box](tag)
+- [meta boxes](tag)
+- [memcache](tag)
+- [memcached](tag)
+- [nginx](tag)
+- [speed](tag)
+- [permalinks](tag)
+- [update links](tag)
+- [urls](tag)
+- [url](tag)
+- [block spam](tag)
+- [comment](tag)
+- [author avatar](tag)
+- [author-image](tag)
+- [author-photo](tag)
+- [avatar](tag)
+- [bbPress](tag)
+- [backups](tag)
+- [zip](tag)
+
+## synonym:Cold Start
+- Cold
+
+## synonym:Feature Based
+- Feature
+
+## synonym:Rating Based
+- Rating
+
+## regex:number_of_recommendations
+- contact
+- contact form
+- email
+- feedback
+- form
+- Content analysis
+- google search console
+- Readability
+- seo
+- xml sitemap
+- akismet
+- anti-spam
+- antispam
+- comments
+- spam
+- backup
+- jetpack
+- related posts
+- security
+- WordPress.com
+- importer
+- e-commerce
+- ecommerce
+- sales
+- sell
+- store
+- all in one seo
+- google
+- page
+- seo
+- twitter
+- bing
+- google
+- msn
+- seo
+- yahoo
+- authentication
+- login
+- security
+- editor
+- formatting
+- tinyMCE
+- Write
+- wysiwyg
+- firewall
+- limit login attempts
+- login security
+- malware scanner
+- security
+- clone
+- copy
+- duplicate post
+- cache
+- caching
+- performance
+- WP Cache
+- WP Super Cache
+- analytics
+- Analytics dashboard
+- google analytics
+- google analytics dashboard
+- google analytics widget
+- post thumbnail
+- post thumbnails
+- thumbnail
+- thumbnails
+- backup
+- cloud backup
+- database backup
+- restore
+- wordpress backup
+- acf
+- advanced
+- custom
+- field
+- fields
+- builder
+- page builder
+- responsive
+- widget
+- widgets
+- analytics
+- google analytics
+- google analytics dashboard
+- google analytics plugin
+- google analytics widget
+- cache
+- caching
+- compression
+- maxcdn
+- seo
+- backup
+- migrate
+- migration
+- move
+- restore
+- bundle
+- button
+- image
+- slider
+- widget
+- email
+- mailchimp
+- marketing
+- mc4wp
+- newsletter
+- captcha
+- gallery
+- nextgen
+- NextGEN Gallery
+- photo gallery
+- wordpress gallery plugin
+- contact form
+- custom form
+- form
+- form builder
+- forms
+- comments
+- disable
+- global
+- compress
+- image
+- optimise
+- Optimize
+- resize
+- i18n
+- Japanese
+- multibyte
+- wp-multibyte-patch
+- backup
+- copy
+- migrate
+- move
+- transfer
+- navigation
+- pages
+- pagination
+- paging
+- editor
+- html
+- visual
+- widget
+- wysiwyg
+- 301
+- 404
+- htaccess
+- redirect
+- seo
+- hack
+- malware
+- secure
+- security
+- security plugin
+- seo
+- slider
+- slideshow
+- widget
+- wordpress slideshow
+- contact form
+- contact form plugin
+- custom form
+- form builder
+- forms
+- gmail smtp
+- sendgrid smtp
+- smtp
+- wordpress smtp
+- WP Mail SMTP
+- breadcrumb
+- breadcrumbs
+- menu
+- navigation
+- trail
+- button
+- columns
+- shortcode
+- slider
+- toggle
+- comments
+- database
+- Optimize
+- revisions
+- spam
+- analytics
+- dashboard
+- google
+- google analytics
+- google analytics plugin
+- force ssl
+- https
+- insecure content
+- mixed content
+- ssl
+- csv
+- data
+- excel
+- html
+- table
+- anti-virus
+- antivirus
+- ban
+- secure
+- security
+- amazon
+- amazon s3
+- back up
+- backup
+- chinese
+- access
+- admin
+- login
+- Loginizer
+- logs
+- compress
+- image
+- lossless
+- optimization
+- Optimize
+- aweber
+- lightbox popup
+- mailchimp
+- popup
+- wordpress popup
+- calendar
+- Event
+- events
+- organizer
+- venue
+- force
+- regenerate thumbnails
+- thumbnail
+- thumbnails
+- coming soon
+- coming soon page
+- launch page
+- maintenance mode
+- under construction
+- backup
+- Manage Multiple Sites
+- migrate
+- performance
+- security
+- admin
+- admin interface
+- options
+- plugin options
+- theme options
+- coming soon
+- launch page
+- maintenance
+- maintenance mode
+- website maintenance
+- blogroll
+- broken
+- custom fields
+- links
+- maintenance
+- l10n
+- localisation
+- localization
+- translation
+- translators
+- Instagram
+- instagram feed
+- instagram gallery
+- instagram photos
+- Instagram widget
+- e-commerce
+- products
+- Wishlist
+- woocommerce
+- yit
+- cache
+- performance
+- super cache
+- total cache
+- WP Cache
+- cms
+- cpt
+- custom post types
+- post
+- types
+- async
+- minify
+- Optimize
+- pagespeed
+- performance
+- ad
+- banner
+- image
+- simple
+- widget
+- AddToAny
+- share
+- share buttons
+- sharing
+- social
+- cookie
+- cookies
+- notice
+- notification
+- notify
+- contact
+- social
+- social icons
+- social media
+- widget
+- access
+- editor
+- role
+- security
+- user
+- post order
+- post sort
+- posts order
+- posts sort
+- sort
+- drag-and-drop
+- editor
+- elementor
+- landing page
+- page builder
+- analytics
+- statistics
+- stats
+- Visit
+- WordPress analytics
+- coming soon
+- maintenance
+- maintenance mode
+- splash page
+- under construction
+- beaver builder
+- Drag And Drop editor
+- front-end builder
+- landing page
+- page builder
+- google map
+- Google Maps
+- map
+- map markers
+- maps
+- duplicate custom posts
+- duplicate page
+- duplicate post
+
+## lookup:recommendation_type
+- Cold Start
+- Feature Based
+- Rating Based

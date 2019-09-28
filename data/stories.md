@@ -1,27 +1,24 @@
-## happy path
+## interactive_story_1
 * greet
-  - utter_greet
-* mood_great
-  - utter_happy
-
-## sad path 1
-* greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
+    - utter_greet
+## help
+* help
+    - utter_help
 * affirm
-  - utter_happy
+    - utter_indicator
 
-## sad path 2
-* greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
-* deny
-  - utter_goodbye
+## a user who knows
 
-## say goodbye
+* recommendation_request{"recommendation_type": "Cold Start"}
+    - slot{"recommendation_type": "Cold Start"}
+    - utter_which_tag
+* tags{"tag": "google"}
+    - slot{"tag": "google"}
+    - utter_summary_cold_start
+
+## bye bye
+
 * goodbye
-  - utter_goodbye
+    - utter_goodbye
+    - action_restart
+
