@@ -12,6 +12,7 @@ actions:
 - utter_summary_cold_start
 - utter_which_tag
 - utter_wrong_number
+- action_cold_start
 entities:
 - number_of_components
 - recommendation_type

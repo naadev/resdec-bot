@@ -15,6 +15,7 @@
 * tags{"tag": "google"}
     - slot{"tag": "google"}
     - utter_summary_cold_start
+	- action_cold_start
 
 ## bye bye
 
