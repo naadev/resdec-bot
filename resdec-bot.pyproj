@@ -11,10 +11,18 @@
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
-    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <LaunchProvider>Web launcher</LaunchProvider>
     <InterpreterId>CondaEnv|CondaEnv|resdec</InterpreterId>
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
     <IsWindowsApplication>False</IsWindowsApplication>
+    <CommandLineArguments>
+    </CommandLineArguments>
+    <InterpreterPath>
+    </InterpreterPath>
+    <InterpreterArguments>
+    </InterpreterArguments>
+    <PythonRunWebServerCommand>rasa</PythonRunWebServerCommand>
+    <PythonRunWebServerCommandArguments>run actions</PythonRunWebServerCommandArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
@@ -27,6 +35,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Poco\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\resdecservices.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="__init__.py" />
@@ -45,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="data\" />
+    <Folder Include="Services\" />
     <Folder Include="Poco\" />
   </ItemGroup>
   <ItemGroup>

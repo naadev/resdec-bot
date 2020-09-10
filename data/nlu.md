@@ -18,6 +18,12 @@
 - i love that
 - yes
 
+## intent:thank_you
+- cool, thanks
+- thank you!
+- thank you very much
+- that was cool, thanks
+
 ## intent:deny
 - no
 - no new selection
@@ -66,6 +72,17 @@
 - hello friend
 - hello
 
+## intent:any_other_platform
+- What are the configurations you support?
+- Do you serve any other platform than wordpress ones?
+- is there any platform you support apart of wordpress?
+- what are the platforms supported by you?
+- Which configurations do you serve?
+- do you only support wordpress?
+- Is wordpress the only platform you support?
+- Which platforms do you support?
+- What platforms can you serve?
+
 ## intent:help
 - I need some help
 - What can you do?
@@ -80,11 +97,26 @@
 - I want a recommendation
 - help
 
-## intent:number_of_recommendations
-- Can you recommend me [10](number_of_components) components?
-- List [4](number_of_components) components, please
-- I would need at least [2](number_of_components)
-- can you display [4](number_of_components)
+## intent:more_components
+- show me more components
+- I don't like this one
+- I have used this one already, show me a different one
+- Do you have any alternative?
+- Is there any other component I could use
+- which other alternatives can you show me?
+- what other components could I use?
+- more components
+- any different component?
+- any one else?
+- can I use a different one?
+- Do you know any other one?
+- Show me more
+- What else?
+- Show me [5](number_of_components) more components
+- Display [3](number_of_components) components more
+- I'd like to see [2](number_of_components) more components, please
+- Can you list [4](number_of_components) components?
+- Can you list more components?
 
 ## intent:recommendation_request
 - [Cold Start](recommendation_type)
@@ -94,7 +126,6 @@
 - I want a [Feature](recommendation_type:Feature Based) recommendation
 - I want a [Rating](recommendation_type:Rating Based) recommendation
 - I think I will start with a [Cold Start](recommendation_type)
-- Recommend me [2](number_of_components) components for a [map][tag] functionality
 - Let's go for a [Cold Start](recommendation_type)
 - Let's go for a [Feature Based](recommendation_type)
 - Let's go for a [Rating Based](recommendation_type)
@@ -465,353 +496,6 @@
 
 ## synonym:Rating Based
 - Rating
-
-## regex:number_of_recommendations
-- contact
-- contact form
-- email
-- feedback
-- form
-- Content analysis
-- google search console
-- Readability
-- seo
-- xml sitemap
-- akismet
-- anti-spam
-- antispam
-- comments
-- spam
-- backup
-- jetpack
-- related posts
-- security
-- WordPress.com
-- importer
-- e-commerce
-- ecommerce
-- sales
-- sell
-- store
-- all in one seo
-- google
-- page
-- seo
-- twitter
-- bing
-- google
-- msn
-- seo
-- yahoo
-- authentication
-- login
-- security
-- editor
-- formatting
-- tinyMCE
-- Write
-- wysiwyg
-- firewall
-- limit login attempts
-- login security
-- malware scanner
-- security
-- clone
-- copy
-- duplicate post
-- cache
-- caching
-- performance
-- WP Cache
-- WP Super Cache
-- analytics
-- Analytics dashboard
-- google analytics
-- google analytics dashboard
-- google analytics widget
-- post thumbnail
-- post thumbnails
-- thumbnail
-- thumbnails
-- backup
-- cloud backup
-- database backup
-- restore
-- wordpress backup
-- acf
-- advanced
-- custom
-- field
-- fields
-- builder
-- page builder
-- responsive
-- widget
-- widgets
-- analytics
-- google analytics
-- google analytics dashboard
-- google analytics plugin
-- google analytics widget
-- cache
-- caching
-- compression
-- maxcdn
-- seo
-- backup
-- migrate
-- migration
-- move
-- restore
-- bundle
-- button
-- image
-- slider
-- widget
-- email
-- mailchimp
-- marketing
-- mc4wp
-- newsletter
-- captcha
-- gallery
-- nextgen
-- NextGEN Gallery
-- photo gallery
-- wordpress gallery plugin
-- contact form
-- custom form
-- form
-- form builder
-- forms
-- comments
-- disable
-- global
-- compress
-- image
-- optimise
-- Optimize
-- resize
-- i18n
-- Japanese
-- multibyte
-- wp-multibyte-patch
-- backup
-- copy
-- migrate
-- move
-- transfer
-- navigation
-- pages
-- pagination
-- paging
-- editor
-- html
-- visual
-- widget
-- wysiwyg
-- 301
-- 404
-- htaccess
-- redirect
-- seo
-- hack
-- malware
-- secure
-- security
-- security plugin
-- seo
-- slider
-- slideshow
-- widget
-- wordpress slideshow
-- contact form
-- contact form plugin
-- custom form
-- form builder
-- forms
-- gmail smtp
-- sendgrid smtp
-- smtp
-- wordpress smtp
-- WP Mail SMTP
-- breadcrumb
-- breadcrumbs
-- menu
-- navigation
-- trail
-- button
-- columns
-- shortcode
-- slider
-- toggle
-- comments
-- database
-- Optimize
-- revisions
-- spam
-- analytics
-- dashboard
-- google
-- google analytics
-- google analytics plugin
-- force ssl
-- https
-- insecure content
-- mixed content
-- ssl
-- csv
-- data
-- excel
-- html
-- table
-- anti-virus
-- antivirus
-- ban
-- secure
-- security
-- amazon
-- amazon s3
-- back up
-- backup
-- chinese
-- access
-- admin
-- login
-- Loginizer
-- logs
-- compress
-- image
-- lossless
-- optimization
-- Optimize
-- aweber
-- lightbox popup
-- mailchimp
-- popup
-- wordpress popup
-- calendar
-- Event
-- events
-- organizer
-- venue
-- force
-- regenerate thumbnails
-- thumbnail
-- thumbnails
-- coming soon
-- coming soon page
-- launch page
-- maintenance mode
-- under construction
-- backup
-- Manage Multiple Sites
-- migrate
-- performance
-- security
-- admin
-- admin interface
-- options
-- plugin options
-- theme options
-- coming soon
-- launch page
-- maintenance
-- maintenance mode
-- website maintenance
-- blogroll
-- broken
-- custom fields
-- links
-- maintenance
-- l10n
-- localisation
-- localization
-- translation
-- translators
-- Instagram
-- instagram feed
-- instagram gallery
-- instagram photos
-- Instagram widget
-- e-commerce
-- products
-- Wishlist
-- woocommerce
-- yit
-- cache
-- performance
-- super cache
-- total cache
-- WP Cache
-- cms
-- cpt
-- custom post types
-- post
-- types
-- async
-- minify
-- Optimize
-- pagespeed
-- performance
-- ad
-- banner
-- image
-- simple
-- widget
-- AddToAny
-- share
-- share buttons
-- sharing
-- social
-- cookie
-- cookies
-- notice
-- notification
-- notify
-- contact
-- social
-- social icons
-- social media
-- widget
-- access
-- editor
-- role
-- security
-- user
-- post order
-- post sort
-- posts order
-- posts sort
-- sort
-- drag-and-drop
-- editor
-- elementor
-- landing page
-- page builder
-- analytics
-- statistics
-- stats
-- Visit
-- WordPress analytics
-- coming soon
-- maintenance
-- maintenance mode
-- splash page
-- under construction
-- beaver builder
-- Drag And Drop editor
-- front-end builder
-- landing page
-- page builder
-- google map
-- Google Maps
-- map
-- map markers
-- maps
-- duplicate custom posts
-- duplicate page
-- duplicate post
 
 ## lookup:recommendation_type
 - Cold Start

@@ -1,6 +1,7 @@
 %YAML 1.1
 ---
 actions:
+- utter_variability_environment
 - action_search
 - utter_default
 - utter_getting_started_confirmation
@@ -9,55 +10,85 @@ actions:
 - utter_help
 - utter_indicator
 - utter_submit
-- utter_summary_cold_start
+- utter_summary
 - utter_which_tag
 - utter_wrong_number
+- utter_more_components
 - action_cold_start
+- action_giveme_more
+
 entities:
 - number_of_components
 - recommendation_type
 - tag
+
 intents:
-- recommendation_request
-- greet
-- help
-- goodbye
-- tags
 - affirm
 - deny
-- number_of_recommendations
+- goodbye
+- greet
+- help
+- more_components
+- recommendation_request
+- tags
+- any_other_platform
+- thank_you
+
 slots:
   number_of_components:
     initial_value: 1
-    type: unfeaturized
+    type: float
+    min_value: 1
+    max_value: 10
   recommendation_type:
     type: categorical
     values:
     - cold start
     - feature based
     - rating based
+    initial_value: "cold start"
   tag:
     type: text
 templates:
   utter_default:
-  - text: ok, cancelling
+  - text: "ok, cancelling"
+  utter_variability_environment:
+  - text: "currently I only support Wordpress recommendations"
+  - text: "I've been training on supporting Wordpress recommentations only"
+  - text: "I'd really like to help you, but I only handle Wordpress recommentations"
   utter_getting_started_confirmation:
-  - text: Gotcha, let's go for a {recommendation_type} recommendation
+  - text: "Gotcha, let's go for a {recommendation_type} recommendation"
+  - text: "Proceeding with {recommendation_type}"
+  - text: "Ok, enabling {recommendation_type}"
   utter_goodbye:
-  - text: Bye
+  - text: "Bye"
+  - text: "Thank you for interacting with me"
+  - text: "I hope the conversation has been useful"
+  - text: "Thanks for talking to me"
+  - text: "Good bye"
+  - text: "It was my pleasure"
   utter_greet:
-  - text: Hello, I'm Rick, your Recommender bot
-  - text: Hi, Rick here. I'm a bot for recommendations
+  - text: "Hello, I'm Rick, your Wordpress Recommender bot"
+  - text: "Hi, Rick here. I'm a bot for recommendations on Wordpress components"
+  - text: "This is Rick. A bot for recommending Wordpress components"
   utter_help:
-  - text: I can help you to choose wordpress components. Would you like to get started?
+  - text: "I can help you to choose wordpress components. Would you like to get started?"
+  - text: "My main function is helping you to choose wordpress components. Do you want to try me?"
   utter_indicator:
-  - text: 'You can choose between following options: Cold Start, feature based recommendations
-      or rating based recommendations'
+  - text: "You can choose between following options: Cold Start, feature based recommendations or rating based recommendations"
   utter_submit:
-  - text: done...
-  utter_summary_cold_start:
-  - text: Here is what I found when I search for {tag} using a {recommendation_type}
+  - text: "done..."
+  utter_summary:
+  - text: "Here is what I found when I search for {tag} using a {recommendation_type}"
+  - text: "My recommendation for a component featuring {tag} based on {recommendation_type} model:"
+  - text: "According {recommendation_type} model I suggest you to use following Wordpress component to enable {tag} feature"
+  utter_summary_default:
+  - text: "After searching for a component supporting {tag} I found this information"
   utter_which_tag:
-  - text: Give me a key word so I can search
+  - text: "I work on the base of features, I cover Wordpress features such as chat, maps and some others, which feature are you interested in?"
   utter_wrong_number:
-  - text: That's not a number...
+  - text: "That's not a number..."
+  utter_more_components:
+  - text: "Let me check what else I have for you"
+  - text: "Let's see if I can show you something else"
+  - text: "I'll try to find another component"
